@@ -9,13 +9,13 @@
             ':passwordUser'=>$datosModel['passwordUser'],
             ));
 
-          return $res =  $sql->fetch();
+           $res =  $sql->fetch();
 
-          /* if ($res == true) {
+           if ($res) {
              return $res;
            }else{
              return 'Error';
-           }*/
+           }
 
         $sql->close();
    	  }
